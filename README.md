@@ -266,3 +266,27 @@ make run
 
 ## TODO
 * vendor/68katy-musashi_mingw_v1_success.7z  
+
+## Study in my weibo
+```
+目前risc-v rv32和m68k都可以找到轻量级模拟器运行linux或uclinux：
+mini-rv32ima+linux+mingw和68katy-musashi+uclinux+mingw。
+现在还差我最喜欢的mips和arm的轻量级模拟器就齐全了
+（其实还可以加上x86）。arm比较少，例如skyeye。
+mips则可能较多，例如virtualmips。
+我要研究一段时间找找看 
+```
+```
+我顺便把eparadis/68katy-musashi移植到mingw（需要一些修改）
+——当然这个mingw移植只是能跑起来，涉及到控制台终端的问题
+（例如vi的颜色）被忽略掉（执行vi会乱），
+效果大概如下，可以看到简单的uclinux命令行可以跑起来
+```
+```
+用ubuntu14编译运行Musashi m68k模拟器跑uclinux成功，
+基于这个开源项目eparadis/68katy-musashi（基于Musashi），
+效果类似于alexwinston/Jaty68k，固件的用法类似（j 003000）。
+我原本想自己移植到C++，不过现在可以省了，
+因为这个项目已经成功移植到C上。
+我有时间会研究怎么在windows mingw下跑这个项目
+```
